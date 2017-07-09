@@ -4,7 +4,7 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
     "server": "node node_modules/ng2f-server/server.js",
-    "postinstall": "ytpings install",    
+    "postinstall": "ytpings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
@@ -18,21 +18,21 @@
     }
   ],
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/common": "^4.2.6",
+    "@angular/compiler": "^4.2.6",
+    "@angular/core": "^4.2.6",
+    "@angular/forms": "^4.2.6",
+    "@angular/http": "^4.2.6",
+    "@angular/platform-browser": "^4.2.6",
+    "@angular/platform-browser-dynamic": "^4.2.6",
+    "@angular/router": "^4.2.6",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
     "ng2f-bootstrap": "0.0.4",
     "ng2f-server": "^0.2.4",
-    "rxjs": "^5.0.1",
-    "systemjs": "^0.19.40",
+    "rxjs": "^5.4.2",
+    "systemjs": "^0.19.47",
     "zone.js": "^0.8.12"
   },
   "devDependencies": {
