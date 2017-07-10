@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { RouterModule} from '@angular/router'
-import {EventsAppComponent } from './events-app.component'
-import { EventsListComponent} from './events/events-list.component'
-import {EventThumbnailComponent} from './events/events-thumbnails.component'
-import {NavBarComponent} from './nav/navbar.component'
-import {EventService} from './events/shared/event.service'
-import {ToastrService} from './common/toastr.service'
-import {EventDetailsComponent} from './events/event-details/event-details.component'
-import {appRoutes} from './router'
-import {CreateEventComponent} from './events/create-event.component'
+import { RouterModule } from '@angular/router'
+import { EventsAppComponent } from './events-app.component'
+import { EventsListComponent } from './events/events-list.component'
+import { EventThumbnailComponent } from './events/events-thumbnails.component'
+import { NavBarComponent } from './nav/navbar.component'
+import { EventService } from './events/shared/event.service'
+import { ToastrService } from './common/toastr.service'
+import { EventDetailsComponent } from './events/event-details/event-details.component'
+import { appRoutes } from './router'
+import { CreateEventComponent } from './events/create-event.component'
+import { Error404Component } from './error/404.component'
+import { EventRouteActivator } from './events/event-details/event-route-activator.service'
 @NgModule({
     imports: [
         BrowserModule,
@@ -21,9 +23,14 @@ import {CreateEventComponent} from './events/create-event.component'
         EventThumbnailComponent,
         NavBarComponent,
         EventDetailsComponent,
-        CreateEventComponent
+        CreateEventComponent,
+        Error404Component
     ],
-    providers: [EventService, ToastrService],
+    providers: [
+        EventService,
+        ToastrService,
+        EventRouteActivator
+    ],
     bootstrap: [EventsAppComponent]
 })
-export class AppModule {}
+export class AppModule { }
